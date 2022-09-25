@@ -2,6 +2,7 @@ import AvaxIcon from "../assets/networks/avalanche-icon.png";
 import FtmIcon from "../assets/networks/fantom-icon.svg";
 import EthIcon from "../assets/networks/ethereum-icon.svg";
 import AethIcon from "../assets/networks/arbitrum-icon.svg";
+import C4eiIcon from "../assets/networks/c4ei-icon.png";
 
 export const TOKEN_DECIMALS = 9;
 
@@ -10,6 +11,7 @@ export enum Networks {
     FANTOM = 250,
     ETH = 1,
     AETH = 42161,
+    C4EI = 21004,
 }
 
 export const DEFAULD_NETWORK = Networks.AVAX;
@@ -69,5 +71,18 @@ export const NetworksInfo = {
             decimals: 18,
         },
         img: AethIcon,
+    },
+    [Networks.C4EI]: {
+        chainId: "0x520c",
+        chainName: "C4EI",
+        shortName: "C4EI",
+        rpcUrls: ["https://rpc.c4ei.net"],
+        blockExplorerUrls: ["https://exp.c4ei.net"],
+        nativeCurrency: {
+            name: "C4EI",
+            symbol: "C4EI",
+            decimals: 18,
+        },
+        img: C4eiIcon,
     },
 };
